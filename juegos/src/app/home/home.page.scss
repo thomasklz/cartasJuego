@@ -1,0 +1,81 @@
+#container {
+  text-align: center;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.drink-shot{
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  height: auto;
+  align-items: center;
+}
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #8c8c8c;
+
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+.card {
+  width: 200px;
+  height: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  padding: 20px;
+
+  .card-inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .card-suit {
+    font-size: 2em;
+    color: red;
+    margin-bottom: 5px;  /* Agregado para mejorar la separación entre el símbolo y el rango */
+  }
+
+  .card-rank {
+    font-size: 3em;
+  }
+
+  .card-message {
+    font-size: 1.2em;
+    text-align: center;
+  }
+}
+
+img {
+  width: 80px; /* Ancho de la imagen */
+  height: 80px; /* Altura de la imagen */
+  object-fit: cover; /* Ajusta la imagen manteniendo la relación de aspecto y cubriendo completamente el contenedor */
+  //border-radius: 50%; /* Para hacer que la imagen sea circular, puedes ajustar esto según tus preferencias */
+  /* Otros estilos opcionales */
+ // border: 2px solid #fff; /* Borde blanco de 2px */
+ // box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}

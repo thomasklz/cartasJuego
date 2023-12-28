@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>registro</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">registro</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <div id="container">
+    <img src="../../assets/imagenes/espam.jpg" alt="">
+    <ion-list class="ion-margin">
+      <ion-item aria-hidden="true" >
+        <ion-icon slot="start" name="mail-outline"></ion-icon>
+        <ion-input #usuario  [clearInput]="true" placeholder="Usuario" ></ion-input>
+      </ion-item>
+      <ion-item aria-hidden="true" >
+        <ion-icon slot="start" name="mail-outline"></ion-icon>
+        <ion-input #correo [clearInput]="true" placeholder="Correo"></ion-input>
+      </ion-item>
+      <ion-item aria-hidden="true" >
+        <ion-icon slot="start" name="lock-closed-outline"></ion-icon>
+        <ion-input #password [clearInput]="true" type="password"  placeholder="Contraseña"></ion-input>
+      </ion-item>
+    
+      <div class="ion-align-items-center">
+        <ion-button (click)="registro(usuario,correo,password)">
+          <ion-icon slot="start" name="add"></ion-icon>
+          Registrase
+        </ion-button>
+      </div>
+      <div class="ion-align-items-center ion-margin">
+        Ya tienes una cuenta? Inicia Sesión
+      </div>
+    </ion-list>
+  </div>
+</ion-content>
